@@ -32,7 +32,6 @@ async def get_subdomains(domain):
     '''
     
     while await page.evaluate(evaluateQuery):
-        await page.evaluate(evaluateQuery)
         await page.evaluate(evaluateClick)
         await page.waitFor(500)
         
