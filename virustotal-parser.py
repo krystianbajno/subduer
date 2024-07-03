@@ -55,7 +55,7 @@ def parse_html(html):
             for worth_row in worth_rows:
                 if not "?lit" in worth_row and not " " in worth_row and worth_row != "-":
                     entry.append(worth_row)
-            data.append(entry)
+        data.append(entry)
     return data
 
 def save_results(data): 
