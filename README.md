@@ -22,9 +22,7 @@
            ........................... .,: ; ;'.;' c..,;  ..........................                
                       . ... .          .. '.''..., ;...'                     ...  .                 
                                                                                                     
-                                                                                                    
-                                                                                                    
-                                                                                                    
+        
                                                                         VirusTotal Parser
                                                         Subdomain OSINT tool made with <3 
                                                                       Krystian Bajno 2024
