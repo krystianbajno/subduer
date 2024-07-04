@@ -27,3 +27,9 @@
                                                         Subdomain OSINT tool made with <3 
                                                                       Krystian Bajno 2024
 ```
+# Usage
+```bash
+python3 virustotal-parser.py <domain>
+```
+
+The parser uses Puppeteer and will open an instance of chrome in order to scrap the domains from VirusTotal.
