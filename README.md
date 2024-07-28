@@ -9,12 +9,7 @@ Krystian Bajno 2024
 This tool prints out the subdomains to stdout, and saves the results report into a .csv file
 .
 ```bash
-python3 virustotal-parser.py <domain>
+python3 subduetotal.py <domain>
 ```
 
 The parser uses Puppeteer and will open an instance of chrome in order to scrap the domains from VirusTotal.
-
-# Example
-<img src="https://raw.githubusercontent.com/krystianbajno/krystianbajno/main/img/virustotal-parser.webp"/>
-
-

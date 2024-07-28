@@ -6,9 +6,6 @@ from virustotal.results_saver import save_results
 from virustotal.virus_total_subdomain_client import VirusTotalSubdomainClient
 
 async def main():
-    with open("./logo.txt", "r") as logo:
-        print(logo.read())
-        
     parser = argparse.ArgumentParser("virustotal-parser.py")
     parser.add_argument("domain", help="Domain to search", type=str)
     args = parser.parse_args()
