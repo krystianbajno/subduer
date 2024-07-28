@@ -1,4 +1,4 @@
-# virustotal-parser.py
+# subduetotal.py
 
 ```                                                                                                 VirusTotal Parser
 Subdomain OSINT tool made with <3 
