@@ -20,7 +20,7 @@ Subduer is a tool for passive reconnaissance, focusing on discovering subdomains
 ```bash
 bash install.sh
 python3 subduer.py <domain> # Scanning a domain
-python3 subduer.py <domain> --report #Scanning a domain and saving the reports:
+python3 subduer.py <domain> --report # Scanning a domain and saving the reports
 ```
 
 # Providers
