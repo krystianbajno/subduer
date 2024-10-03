@@ -1,5 +1,7 @@
 from bs4 import BeautifulSoup
 
+from mappers.data_mapper import map_data
+
 def parse_html(html):
     minified = html.replace("\n", "").replace("  ", "")
     soup = BeautifulSoup(minified, features="html.parser")
@@ -15,4 +17,5 @@ def parse_html(html):
                 if not "?lit" in worth_row and not " " in worth_row and worth_row != "-":
                     entry.append(worth_row)
         data.append(entry)
-    return data
+        
+    return map_data(data)
