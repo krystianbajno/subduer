@@ -13,7 +13,7 @@ Subdomain OSINT tool made with <3
 Krystian Bajno 2024
 ```
 
-Subduer is a tool for passive reconnaissance, focusing on discovering subdomains for a given domain. It uses Playwright to scrape data from several online providers and generates reports in .csv and .json formats for further analysis.
+Subduer is a tool for passive reconnaissance, focusing on discovering subdomains for a given domain. It uses Playwright to scrape data from several online providers and generates wordlists and reports in .csv and .json formats.
 
 # Usage
 
