@@ -23,8 +23,6 @@ python3 subduer.py <domain> # Scanning a domain
 python3 subduer.py <domain> --report #Scanning a domain and saving the reports:
 ```
 
-Subduer uses Playwright, and will open a browser instance in order to scrap the domains from providers.
-
 # Providers
 - VirusTotal
 - Merklemap
