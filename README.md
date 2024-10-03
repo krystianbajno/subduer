@@ -13,13 +13,14 @@ Subdomain OSINT tool made with <3
 Krystian Bajno 2024
 ```
 
+Subduer is a tool for passive reconnaissance, focusing on discovering subdomains for a given domain. It uses Playwright to scrape data from several online providers and generates reports in .csv and .json formats for further analysis.
+
 # Usage
-This tool performs passive reconnaissance on subdomains, and saves the reports into .csv and .json files.
 
 ```bash
-python3 subduer.py <domain>
-python3 subduer.py <domain> --report # save csv and json reports
-
+bash install.sh
+python3 subduer.py <domain> # Scanning a domain
+python3 subduer.py <domain> --report #Scanning a domain and saving the reports:
 ```
 
 Subduer uses Playwright, and will open a browser instance in order to scrap the domains from providers.
