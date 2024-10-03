@@ -23,6 +23,13 @@ python3 subduer.py <domain> # Scanning a domain
 python3 subduer.py <domain> --report # Scanning a domain and saving the reports
 ```
 
+# Reports
+Subduer saves reports in following formats:
+
+- `subdomains_report_subduer_example.com.csv` - CSV report
+- `subdomains_report_subduer_example.com.json` - JSON report
+- `subdomains_report_subduer_example.com.txt` - Newline separated wordlist
+
 # Providers
 - VirusTotal
 - Merklemap
