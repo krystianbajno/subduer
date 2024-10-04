@@ -20,7 +20,7 @@ Subduer saves reports in following formats:
 - `subdomains_report_subduer_example.com.txt` - Newline separated wordlist
 
 # Providers
-- VirusTotal
-- Merklemap
-- DnsDumpster
-- crt.sh
+- [VirusTotal](https://www.virustotal.com/gui/home/search)
+- [Merklemap](https://www.merklemap.com)
+- [DnsDumpster](https://dnsdumpster.com)
+- [crt.sh](https://crt.sh/)
