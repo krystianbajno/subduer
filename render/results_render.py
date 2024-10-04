@@ -9,7 +9,7 @@ def print_results(entries, query):
         
         if entry.ips:
             ips_component = "\n  " + "\n  ".join(f"{GREEN}-{RESET} {ip}" for ip in entry.ips)
-            print(f"{domains_component}:{ips_component}")
+            print(f"{domains_component}{ips_component}")
         else:
             print(domains_component)
             
