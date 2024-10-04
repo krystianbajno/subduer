@@ -5,10 +5,10 @@ def save_to_csv(entries, filename):
     with open(filename, mode='w', newline='') as file:
         writer = csv.writer(file)
 
-        writer.writerow(['Domains', 'IPs'])
+        writer.writerow(['Domain', 'IPs', 'Dates'])
 
         for entry in entries:
-            writer.writerow([';'.join(entry.domains), ';'.join(entry.ips)])
+            writer.writerow([';'.join(entry.domains), ';'.join(entry.ips), ';'.join(entry.get_str_dates())])
     
     print(f"[+] Saved CSV report to {filename}")
     
@@ -28,7 +28,7 @@ def save_domain_list(entries, filename):
 
 def save_to_json(entries, filename):
     with open(filename, mode='w') as file:
-        json.dump([{"domains": entry.domains, "ips": entry.ips} for entry in entries], file, indent=4)
+        json.dump([{"domains": entry.domains, "ips": entry.ips, "dates": entry.get_str_dates()} for entry in entries], file, indent=4)
         
     print(f"[+] Saved JSON report to {filename}")
 

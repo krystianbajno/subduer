@@ -3,14 +3,14 @@
 import argparse
 import asyncio
 
-from merklemap.merklemap_subdomain_client import MerklemapSubdomainClient
+from sources.crtsh.crtsh_subdomain_client import CrtshSubdomainClient
+from sources.dnsdumpster.dnsdumpster_subdomain_client import DnsdumpsterSubdomainClient
 from render.logo_render import print_logo
 from render.results_render import print_results
 from report.results_saver import save_results
-from virustotal.virustotal_subdomain_client import VirusTotalSubdomainClient
-
-import warnings
-warnings.filterwarnings("ignore")
+from sources.merklemap.merklemap_subdomain_client import MerklemapSubdomainClient
+from sources.source_service import get_results
+from sources.virustotal.virustotal_subdomain_client import VirusTotalSubdomainClient
 
 async def main():
     parser = argparse.ArgumentParser("subduer.py")
@@ -18,25 +18,24 @@ async def main():
     parser.add_argument("--report", help="Save .json and .csv report", required=False, action="store_true")
 
     args = parser.parse_args()
-    
+
     domain = args.domain
     
-    print_logo() 
+    print_logo()
     
     providers = [
+        DnsdumpsterSubdomainClient(),
         VirusTotalSubdomainClient(),
-        MerklemapSubdomainClient()
+        MerklemapSubdomainClient(),
+        CrtshSubdomainClient()
     ]
     
-    output_data = []
-    for provider in providers:
-        data = await provider.get(domain)
-        output_data.extend(data)
-
-    print_results(output_data, domain)
+    results = await get_results(domain, providers)
     
+    print_results(results, domain)
     
-    save_results(output_data, domain)
+    if args.report:
+        save_results(results, domain)
 
 if __name__ == "__main__":
     loop = asyncio.new_event_loop()

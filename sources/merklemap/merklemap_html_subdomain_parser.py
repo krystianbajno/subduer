@@ -14,7 +14,7 @@ def parse_html(htmls):
 
         for row in rows:
             cells = row.find_all('td')
-            row_data = [cell.get_text(strip=True) for cell in cells][1:]
+            row_data = [cell.get_text(strip=True) for cell in cells]
             ret_html.append(row_data)
         
     return map_data(ret_html)

@@ -22,3 +22,5 @@ Subduer saves reports in following formats:
 # Providers
 - VirusTotal
 - Merklemap
+- DnsDumpster
+- crt.sh
