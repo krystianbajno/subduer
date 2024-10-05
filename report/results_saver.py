@@ -28,7 +28,7 @@ def save_domain_list(entries, filename):
 
 def save_to_json(entries, filename):
     with open(filename, mode='w') as file:
-        json.dump([{"domains": entry.domains, "ips": entry.ips, "dates": entry.get_str_dates()} for entry in entries], file, indent=4)
+        json.dump([{"domain": entry.domains[0], "ips": entry.ips, "dates": entry.get_str_dates()} for entry in entries], file, indent=4)
         
     print(f"[+] Saved JSON report to {filename}")
 
