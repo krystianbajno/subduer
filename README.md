@@ -24,3 +24,11 @@ Subduer saves reports in following formats:
 - [Merklemap](https://www.merklemap.com)
 - [DnsDumpster](https://dnsdumpster.com)
 - [crt.sh](https://crt.sh/)
+
+# Async
+The tool is pretty fast as it asynchronously runs collectors.
+
+# Fail-safe
+- When collector fails to retrieve the subdomains, it retries. 
+- If you abuse the service and get captcha, it is yours to solve in the opened Playwright browser. After solving the captcha, the tool will retry.
+- If a source fails after specified amount of retries, the subduer will simply ignore that source and continue execution.
