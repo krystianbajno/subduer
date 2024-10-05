@@ -21,7 +21,7 @@ class MerklemapSubdomainClient(Source):
             browser = await p.chromium.launch(headless=False)
 
             context = await browser.new_context(
-                viewport={"width": 1920, "height": 1080},
+                viewport={"width": 640, "height": 480},
                 user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 OPR/68.0.3618.125'
             )
             page = await context.new_page()

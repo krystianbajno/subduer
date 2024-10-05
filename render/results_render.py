@@ -12,7 +12,7 @@ def format_date_range(entry):
     return f"{GREY}{oldest_date} - {newest_date}{RESET}"
 
 def print_results(entries, query):
-    print(f"[{GREEN}+{RESET}] Results for {BOLD}{query}{RESET}:\n")
+    print(f"\n[{GREEN}+{RESET}] Results for {BOLD}{query}{RESET}:\n")
     
     for entry in entries:
         domains_component = GREEN + ", ".join(entry.domains) + RESET
