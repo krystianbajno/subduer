@@ -1,5 +1,3 @@
-# https://crt.sh/?q=nask.pl
-
 from typing import List
 
 import httpx
