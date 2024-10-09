@@ -12,13 +12,6 @@ python3 subduer.py <domain> # Scanning a domain
 python3 subduer.py <domain> --report # Scanning a domain and saving the reports
 ```
 
-### Docker
-```
-docker build -t subduer .
-docker run --rm -it subduer <domain>
-docker run --rm -it -v $(pwd)/reports:/app/reports subduer example.com --report
-```
-
 # Reports
 Subduer saves reports in following formats:
 
