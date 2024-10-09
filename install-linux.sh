@@ -12,5 +12,6 @@ pip install pytest-playwright playwright -U
 
 playwright install-deps
 playwright install --with-deps
+playwright install
 
 echo "Installation complete!"
