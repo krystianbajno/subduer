@@ -1,3 +1,5 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/krystianbajno/subduer/badge)](https://www.codefactor.io/repository/github/krystianbajno/subduer)
+
 # Subduer
 
 <img src="https://raw.githubusercontent.com/krystianbajno/krystianbajno/main/img/subduer.png"/>
