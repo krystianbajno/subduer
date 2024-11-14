@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/99702b1cbe2945ea9417616284ad0874)](https://app.codacy.com/gh/krystianbajno/subduer?utm_source=github.com&utm_medium=referral&utm_content=krystianbajno/subduer&utm_campaign=Badge_Grade)
 [![CodeFactor](https://www.codefactor.io/repository/github/krystianbajno/subduer/badge)](https://www.codefactor.io/repository/github/krystianbajno/subduer)
 
 # Subduer
