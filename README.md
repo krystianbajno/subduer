@@ -1,6 +1,6 @@
-[![CodeFactor](https://www.codefactor.io/repository/github/krystianbajno/subduer/badge)](https://www.codefactor.io/repository/github/krystianbajno/subduer)
-
 # Subduer
+[![CodeFactor](https://www.codefactor.io/repository/github/krystianbajno/subduer/badge)](https://www.codefactor.io/repository/github/krystianbajno/subduer)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/717e4bb456934b81874fbf60b7afdb3d)](https://app.codacy.com/gh/krystianbajno/subduer/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 <img src="https://raw.githubusercontent.com/krystianbajno/krystianbajno/main/img/subduer.png"/>
 
