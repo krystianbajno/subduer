@@ -8,7 +8,7 @@ def parse_xlsx(data):
     
     workbook = openpyxl.load_workbook(BytesIO(data))
     
-    sheet = workbook.active
+    sheet = workbook["DNS Records"]
     
     for row in sheet.iter_rows(min_row=2, values_only=True):
         row_data = list(row)

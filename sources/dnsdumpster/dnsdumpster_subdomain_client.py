@@ -6,9 +6,9 @@ from sources.dnsdumpster.dns_dumpster_xlsx_subdomain_parser import parse_xlsx
 from sources.source import Source
 import os
 
-INPUT_SELECTOR = '#regularInput'
-SUBMIT_SELECTOR = '#formsubmit > button'
-DOWNLOAD_SELECTOR = '#intro > div:nth-child(1) > div.row > div > div:nth-child(14) > div > a:nth-child(1) > button'
+INPUT_SELECTOR = '#target'
+SUBMIT_SELECTOR = '#wp--skip-link--target > div > div.wp-block-group.has-global-padding.is-layout-constrained.wp-container-core-group-is-layout-5.wp-block-group-is-layout-constrained > form > button'
+DOWNLOAD_SELECTOR = '#results > div.wp-block-buttons.is-layout-flex.wp-container-core-buttons-is-layout-1.wp-block-buttons-is-layout-flex > div > a'
 
 class DnsdumpsterSubdomainClient(Source):
     async def get(self, domain) -> List[Entry]:
