@@ -27,6 +27,9 @@ Subduer saves reports in following formats:
 - [DnsDumpster](https://dnsdumpster.com)
 - [crt.sh](https://crt.sh/)
 
+# TODO
+- [PugRecon](https://dash.pugrecon.celes.in)
+
 # Async
 The tool is pretty fast as it asynchronously runs collectors.
 

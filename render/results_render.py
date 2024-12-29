@@ -1,6 +1,5 @@
 from render.cli import GREY, BOLD, GREEN, RESET
 
-
 def format_date_range(entry):
     if not entry.dates:
         return ""
